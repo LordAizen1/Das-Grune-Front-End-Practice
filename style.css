@@ -1,0 +1,223 @@
+/* CSS Variables for easy management */
+:root {
+    --primary-color: #D5FF40;
+    --secondary-color: #2D4A00;
+    --accent-color: #BAE238;
+    --dark-color: #262626;
+    --font-family: 'Gilroy', sans-serif;
+}
+
+/* Font Declarations */
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('fonts/gilroy/Gilroy-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/fonts/gilroy/Gilroy-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+/* Navigation Styles */
+nav {
+    padding: 60px 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+nav h2 {
+    font-family: 'Gilroy-Medium';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav a {
+    font-size: 20px;
+    font-family: 'Gilroy-Regular';
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 120px;
+}
+
+.hero-Text1, .hero-Text2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-Text1 h1, .hero-Text2 h1 {
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Gilroy-Heavy';
+    line-height: 130px;
+}
+
+.hero-Text1 .video {
+    height: 100px;
+    width: 400px;
+    background-color: black;
+    border-radius: 50px;
+    background-image: url('https://images.unsplash.com/photo-1735744583287-07e58313f8cf?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.video .play {
+    height: 100%;
+    width: 86px;
+    background-color: black;
+    border-radius: 50px;
+    border: 3px solid var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.video .play:hover{
+    transform: scale(1.05);
+} 
+
+.play i {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.stars {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding-right: 100px;
+}
+
+.stars i {
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+.hero-Text2 p {
+    font-size: 25px;
+    color: var(--secondary-color);
+    width: 500px;
+    font-weight: 400;
+    font-family: 'Gilroy-Light';
+    line-height: 35px;
+    margin-top: 50px;
+}
+
+/* Pills Container */
+.hero-Text3 {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* General styling for both pills */
+.hero-Text3 .left, .hero-Text3 .right {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 25px;
+    border-radius: 999px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    color: var(--secondary-color);
+}
+
+/* Icon styles */
+.hero-Text3 .globe, .hero-Text3 .crown {
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+/* Adjust padding to make the pills look balanced */
+.hero-Text3 .left {
+    padding-right: 30px;
+}
+
+.hero-Text3 .right {
+    padding-left: 30px;
+}
+
+.image {
+    margin-top: 80px;
+    height: 1200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 85%;
+    margin-left: 8%;
+    background-image: url(https://images.wallpaperscraft.com/image/single/abstraction_line_wavy_113046_3840x2160.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.image .arrow {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 8px solid var(--dark-color);
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: -7%;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.image .arrow:hover{
+    transform: scale(1.05);
+}
+
+.arrow i {
+    font-size: 150px;
+}
