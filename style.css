@@ -10,22 +10,22 @@
 /* Font Declarations */
 @font-face {
     font-family: 'Gilroy-Heavy';
-    src: url('/Das-Grune-Front-End-Practice/fonts/gilroy/Gilroy-Heavy.ttf') format('truetype');
+    src: url('./fonts/gilroy/Gilroy-Heavy.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Regular';
-    src: url('/Das-Grune-Front-End-Practice/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+    src: url('./fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Light';
-    src: url('/Das-Grune-Front-End-Practice/fonts/gilroy/Gilroy-Light.ttf') format('truetype');
+    src: url('./fonts/gilroy/Gilroy-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Gilroy-Medium';
-    src: url('/Das-Grune-Front-End-Practice/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    src: url('./fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
 }
 
 /* Reset and Base Styles */
